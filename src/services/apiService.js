@@ -6,7 +6,8 @@ import { logDebug } from '../utils/debugLogger';
 // This utility handles all API calls, ensures consistent headers, and parses our standardized responses.
 const apiService = {
   // Base URL for your Laravel API
-  BASE_URL: 'http://api.lms.com/api', // Adjust if your API URL is different
+  //BASE_URL: 'http://api.lms.com/api', // Adjust if your API URL is different
+  BASE_URL: 'https://lms-api-production.up.railway.app/api', // Adjust if your API URL is different
 
   /**
    * Makes an authenticated API request.
