@@ -10,7 +10,7 @@ const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const apiService = {
   // Base URL for your Laravel API
   //BASE_URL: 'http://api.lms.com/api', // Adjust if your API URL is different
-  BASE_URL: ${BASE_URL};//'https://lms-api-production.up.railway.app/api',
+  BASE_URL: ${BASE_URL},//'https://lms-api-production.up.railway.app/api',
 
   /**
    * Makes an authenticated API request.
