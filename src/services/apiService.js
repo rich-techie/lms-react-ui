@@ -2,12 +2,15 @@
 
 import { logDebug } from '../utils/debugLogger';
 
+// Change it to this to use the Vercel environment variable:
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 // API Service Utility (DRY Principle)
 // This utility handles all API calls, ensures consistent headers, and parses our standardized responses.
 const apiService = {
   // Base URL for your Laravel API
   //BASE_URL: 'http://api.lms.com/api', // Adjust if your API URL is different
-  BASE_URL: 'https://lms-api-production.up.railway.app/api', // Adjust if your API URL is different
+  BASE_URL: ${BASE_URL};//'https://lms-api-production.up.railway.app/api',
 
   /**
    * Makes an authenticated API request.
